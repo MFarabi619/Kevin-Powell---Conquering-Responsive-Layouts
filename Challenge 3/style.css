@@ -19,7 +19,7 @@
 }
 
 .content p {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #ffffffd9;
   padding: 0 0 2em 0;
 }
@@ -31,7 +31,7 @@ h1 {
 a {
   text-decoration: none;
   color: black;
-  font-size: 0.8rem;
+  font-size: 1.2rem;
   font-weight: 800;
   /* background-color: #38cfd9; */
   /* border-radius: 31.5px; */
@@ -43,5 +43,5 @@ a {
   background-color: #38cfd9;
   border-radius: 31.5px;
   width: auto;
-  padding: 0.5em 1.5em;
+  padding: 1em 3em;
 }
