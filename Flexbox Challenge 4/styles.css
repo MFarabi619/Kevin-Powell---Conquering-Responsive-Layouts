@@ -9,6 +9,7 @@ img {
 
 body {
   font-family: "Roboto", sans-serif;
+  font-size: 1.3125rem;
 }
 
 .hero p {
@@ -38,7 +39,19 @@ body {
 
 .section__one h2 {
   color: #824936;
-  font-size: ;
+  font-size: 2.25rem;
+  font-family: "Playfair Display", sans-serif;
 }
+
+.section__one {
+  display: flex;
+  flex-direction: column;
+}
+.section__one col {
+  font-size: 1.3125rem;
+  font-family: "Roboto", sans-serif;
+}
+
 .container {
+  max-width: 1128px;
 }
