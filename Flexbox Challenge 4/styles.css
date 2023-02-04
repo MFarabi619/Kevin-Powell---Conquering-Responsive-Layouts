@@ -24,8 +24,9 @@ body {
   color: #824936;
   font-size: 3.75rem;
   margin: 0 2rem;
-  max-width: 40%;
+  max-width: 50%;
   text-align: center;
+  /* border: 2px solid red; */
 }
 
 .hero {
@@ -37,21 +38,42 @@ body {
   min-height: 660px;
 }
 
-.section__one h2 {
+section {
+  /* border: 2px solid red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section h2 {
   color: #824936;
   font-size: 2.25rem;
   font-family: "Playfair Display", sans-serif;
+  text-align: center;
 }
 
-.section__one {
+.row {
+  border: 2px solid red;
+
   display: flex;
-  flex-direction: column;
 }
-.section__one col {
+section .col {
   font-size: 1.3125rem;
   font-family: "Roboto", sans-serif;
 }
 
+section .col + .col {
+  margin-left: 4rem;
+}
+
 .container {
   max-width: 1128px;
+  margin: 0 3rem;
+  /* border: 2px solid red; */
+}
+
+.row_2_p {
+  max-width: 70%;
+}
+.image_1 {
 }
