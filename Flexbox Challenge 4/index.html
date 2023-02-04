@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.scss" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
@@ -17,58 +17,28 @@
     <title>Document</title>
   </head>
   <body>
-    <section class="hero">
-      <p class="intro__text">lorem ipsum sit</p>
-      <h1 class="intro__title">Responsive layouts don't have to be a struggle</h1>
+    <section class="intro">
+      <div class="container">
+        <p class="intro__text">lorem ipsum sit</p>
+        <h1 class="intro__title">
+          Responsive layouts don't have to be a struggle
+        </h1>
+      </div>
     </section>
-<section class="section-two"><h2 class="section-title">
-  
-</h2></section>
-<section class="section-three"></section>
-<section class="section-four"></section>
-      <section>
-        <div class="container">
 
-        <h2>Quality Designs</h2>
+    <section class="section-two">
+      <div class="container">
+        <h2 class="section-title section-title-dark">Quality Designs</h2>
         <div class="row">
           <div class="col">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
-            vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu
-            felis. Sociis natoque penatibus et magnis dis.
-          </div>
-          <div class="col">
-            Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
-            amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue
-            quisque egestas. Pellentesque sit amet porttitor eget dolor morbi
-            non.
-          </div>
-        </div>
-      </section>
-        </div>
-      <section>
-<div class="container">
-
-        <div class="row">
-          <div class="col">
-            <h3>Made custom for you</h3>
-            <p class="row_2_p">
+            <p>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam.
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Dui
+              vivamus arcu felis bibendum ut tristique. Arcu dui vivamus arcu
+              felis. Sociis natoque penatibus et magnis dis.
             </p>
           </div>
-          <div class="col"><img src="./image-01.jpg" alt="Sun shining on sand with a man standing" class="image_1"/></div>
-        </div>
-    </div>
-      </section>
-
-<section>
-          <div class="container">
-        <div class="row">
-          <div class="col"><img src="./image-02.jpg" alt="Dawn view over mountains" class="image_2"/></div>
           <div class="col">
-            <h3>Created with Care</h3>
             <p>
               Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
               amet luctus venenatis. Turpis in eu mi bibendum neque egestas
@@ -77,7 +47,48 @@
             </p>
           </div>
         </div>
-    </div>
-      </section>
+      </div>
+    </section>
+
+    <section class="section-three">
+      <div class="container row">
+        <div class="col">
+          <h2 class="section-title">Made custom for you</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam.
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="./image-01.jpg"
+            alt="Sun shining on sand with a man standing"
+            class="image_1"
+          />
+        </div>
+      </div>
+    </section>
+
+    <section class="section-four">
+      <div class="container row">
+        <div class="col">
+          <h2 class="section-title">Created with Care</h2>
+          <p>
+            Felis donec et odio pellentesque diam volutpat. Aliquam purus sit
+            amet luctus venenatis. Turpis in eu mi bibendum neque egestas congue
+            quisque egestas. Pellentesque sit amet porttitor eget dolor morbi
+            non.
+          </p>
+        </div>
+        <div class="col">
+          <img
+            src="./image-02.jpg"
+            alt="Dawn view over mountains"
+            class="image_2"
+          />
+        </div>
+      </div>
+    </section>
   </body>
 </html>
