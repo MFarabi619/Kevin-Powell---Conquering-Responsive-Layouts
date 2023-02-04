@@ -20,4 +20,22 @@ h1,
 h2 {
   font-family: "Playfair Display", serif;
   margin-top: 0;
+}
+
+.intro {
+  background: #f3eed9;
+  text-align: center;
+  min-height: 660px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.intro .intro__title {
+  font-size: 3.75rem;
+  color: #824936;
+}
+.intro .intro__text {
+  margin: 0;
+  letter-spacing: 0.8rem;
+  text-transform: uppercase;
 }/*# sourceMappingURL=styles.css.map */
