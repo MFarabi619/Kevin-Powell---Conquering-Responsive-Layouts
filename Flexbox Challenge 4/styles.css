@@ -22,10 +22,15 @@ h2 {
   margin-top: 0;
 }
 
+h2 {
+  font-size: 2.25rem;
+}
+
 .container {
+  width: 85%;
   max-width: 1128px;
   padding: 4em 0;
-  margin: 0 2.5rem;
+  margin: 0 auto;
 }
 
 .intro {
@@ -49,7 +54,6 @@ h2 {
 
 .section-two h2 {
   text-align: center;
-  font-size: 2.25rem;
   color: #824936;
 }
 
@@ -61,4 +65,16 @@ h2 {
 .section-four {
   background-color: #824936;
   color: #f3eed9;
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+  .col {
+    width: 100%;
+  }
+  .col + .col {
+    margin-left: 4rem;
+  }
 }/*# sourceMappingURL=styles.css.map */

@@ -14,7 +14,6 @@ img {
 body {
   margin: 0;
   font-family: "Roboto", sans-serif;
-  // font-family: cursive;
   font-size: 1.3125rem;
   line-height: 1.6;
   color: $black-pearl;
@@ -26,10 +25,15 @@ h2 {
   margin-top: 0;
 }
 
+h2 {
+  font-size: 2.25rem;
+}
+
 .container {
+  width: 85%;
   max-width: 1128px;
   padding: 4em 0;
-  margin: 0 2.5rem;
+  margin: 0 auto;
 }
 
 .intro {
@@ -54,7 +58,6 @@ h2 {
 .section-two {
   h2 {
     text-align: center;
-    font-size: 2.25rem;
     color: $brown-red;
   }
 }
@@ -67,4 +70,16 @@ h2 {
 .section-four {
   background-color: $brown-red;
   color: $quarter-pearl;
+}
+
+@media (min-width: 800px) {
+  .row {
+    display: flex;
+  }
+  .col {
+    width: 100%;
+  }
+  .col + .col {
+    margin-left: 4rem;
+  }
 }
