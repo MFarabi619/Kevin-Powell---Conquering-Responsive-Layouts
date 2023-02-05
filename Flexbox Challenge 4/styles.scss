@@ -26,6 +26,10 @@ h2 {
   margin-top: 0;
 }
 
+.container {
+  max-width: 1128px;
+}
+
 .intro {
   background: $quarter-pearl;
   text-align: center;
@@ -33,13 +37,22 @@ h2 {
   display: flex;
   align-items: center;
   justify-content: center;
-  .intro__title {
-    font-size: 3.75rem;
-    color: $brown-red;
-  }
   .intro__text {
     margin: 0;
     letter-spacing: 0.8rem;
     text-transform: uppercase;
+    font-size: 1.125rem;
   }
+  .intro__title {
+    font-size: 3.75rem;
+    color: $brown-red;
+  }
+}
+
+.section-two {
+}
+
+.section-three {
+  background-color: $black-pearl;
+  color: $quarter-pearl;
 }

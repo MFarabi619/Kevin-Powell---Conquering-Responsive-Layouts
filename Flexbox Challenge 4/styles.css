@@ -22,6 +22,10 @@ h2 {
   margin-top: 0;
 }
 
+.container {
+  max-width: 1128px;
+}
+
 .intro {
   background: #f3eed9;
   text-align: center;
@@ -30,12 +34,18 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.intro .intro__title {
-  font-size: 3.75rem;
-  color: #824936;
-}
 .intro .intro__text {
   margin: 0;
   letter-spacing: 0.8rem;
   text-transform: uppercase;
+  font-size: 1.125rem;
+}
+.intro .intro__title {
+  font-size: 3.75rem;
+  color: #824936;
+}
+
+.section-three {
+  background-color: #222c2a;
+  color: #f3eed9;
 }/*# sourceMappingURL=styles.css.map */
