@@ -28,6 +28,8 @@ h2 {
 
 .container {
   max-width: 1128px;
+  padding: 4em 0;
+  margin: 0 2.5rem;
 }
 
 .intro {
@@ -50,6 +52,11 @@ h2 {
 }
 
 .section-two {
+  h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    color: $brown-red;
+  }
 }
 
 .section-three {
