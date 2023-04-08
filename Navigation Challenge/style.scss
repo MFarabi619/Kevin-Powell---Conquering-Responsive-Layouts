@@ -1,0 +1,221 @@
+/* Challenge
+
+   Make the navigation layout work
+   on both mobile and large screens.
+
+   Mobile-first, so mobile styles first,
+   then add the large screen styles
+   inside the existing media query
+
+*/
+/* made changes here from video
+   to make it more accessible.
+   
+   Works the same :) */
+* {
+  box-sizing: border-box;
+  &::before {
+    box-sizing: border-box;
+  }
+  &::after {
+    box-sizing: border-box;
+  }
+}
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 1.3rem;
+}
+img {
+  max-width: 100%;
+}
+h1 {
+  font-size: 3rem;
+  margin-top: 0;
+}
+.section-title {
+  color: #87629a;
+}
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #23424a;
+  font-weight: 900;
+  background-color: #38cfd9;
+  padding: 0.75em 2em;
+  border-radius: 100px;
+  &:hover {
+    opacity: 0.75;
+  }
+  &:focus {
+    opacity: 0.75;
+  }
+}
+.container {
+  width: 80%;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+}
+header {
+  background: #136c72;
+  padding: 1em 0;
+  text-align: center;
+}
+.nav {
+  width: 100%;
+  visibility: hidden;
+  height: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.nav__link {
+  margin: 1em 0;
+  &:hover,
+  &:focus {
+    opacity: 0.65;
+  }
+}
+
+ul {
+  //   border: 2px solid yellow;
+  list-style: none;
+  padding: 0;
+  a {
+    text-decoration: none;
+    color: white;
+    font-weight: 475;
+    text-transform: uppercase;
+  }
+  li {
+  }
+}
+.nav-toggle {
+  cursor: pointer;
+  border: 0;
+  width: 3em;
+  height: 3em;
+  padding: 0em;
+  border-radius: 50%;
+  background: #072a2d;
+  color: white;
+  transition: opacity 250ms ease;
+  position: absolute;
+  left: 0;
+  &:focus {
+    opacity: 0.75;
+  }
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+.nav__link--button {
+  background-color: white;
+  color: #136c72;
+  padding: 0.3em 1rem;
+  border-radius: 100px;
+}
+.hamburger {
+  width: 50%;
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  height: 3px;
+  background: white;
+  &::before {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+    content: "";
+    width: 100%;
+    transform: translateY(-6px);
+  }
+  &::after {
+    display: block;
+    margin: 0 auto;
+    height: 3px;
+    background: white;
+    content: "";
+    width: 100%;
+    transform: translateY(3px);
+  }
+}
+.nav--visible {
+  visibility: visible;
+  height: auto;
+  position: relative;
+}
+.logo {
+  height: 30px;
+}
+.hero {
+  padding: 100px 0;
+  background-color: #23424a;
+  color: #fff;
+  p {
+    margin-bottom: 3em;
+  }
+}
+.hero__img {
+  margin-top: 2em;
+}
+.main {
+  margin-top: 3em;
+}
+.sidebar {
+  padding: 1em;
+  text-align: center;
+  color: #fff;
+  background-color: #136c72;
+}
+@media (min-width: 800px) {
+  .nav-toggle {
+    display: none;
+  }
+  .nav {
+    // border: 2px solid red;
+    visibility: visible;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    height: auto;
+    max-width: 100%;
+  }
+  .nav__list {
+    display: flex;
+    margin: 0;
+    align-items: center;
+  }
+  .nav__list--primary {
+    margin: 0 auto;
+  }
+  .nav__item {
+    margin: 0 0 0 1.5em;
+  }
+
+  .row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero__text {
+    width: 62%;
+  }
+  .hero__img {
+    width: 32%;
+    align-self: flex-start;
+    margin: 0;
+  }
+  .primary-content {
+    width: 62%;
+  }
+  .sidebar {
+    width: 32%;
+  }
+}
