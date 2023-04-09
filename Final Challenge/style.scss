@@ -1,4 +1,8 @@
-
+$dark-1:#2E323F;
+$dark-2:#3B4050;
+$gray: #6F737F;
+$white: #FFFFFF;
+$brown: #A59678;
 
 * {
   box-sizing: border-box;
@@ -11,6 +15,7 @@
 }
 
 body {
+    color: $brown;
     // font-family: 'Oswald', sans-serif;
     // font-family: 'Montserrat', sans-serif;
 }

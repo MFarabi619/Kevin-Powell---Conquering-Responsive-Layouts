@@ -6,4 +6,8 @@
 }
 *::after {
   box-sizing: border-box;
+}
+
+body {
+  color: #A59678;
 }/*# sourceMappingURL=style.css.map */
