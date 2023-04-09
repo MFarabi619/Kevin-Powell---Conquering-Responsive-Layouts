@@ -8,6 +8,19 @@
   box-sizing: border-box;
 }
 
-body {
+nav {
+  display: flex;
+}
+nav p {
   color: #A59678;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+}
+nav ul li {
+  padding-left: 1rem;
+}
+nav ul a {
+  text-decoration: none;
 }/*# sourceMappingURL=style.css.map */

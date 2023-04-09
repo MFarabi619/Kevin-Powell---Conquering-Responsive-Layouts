@@ -14,8 +14,22 @@ $brown: #A59678;
   }
 }
 
-body {
-    color: $brown;
+nav {
+    display: flex;
+    p{
+        color: $brown;
+    }
     // font-family: 'Oswald', sans-serif;
     // font-family: 'Montserrat', sans-serif;
+
+    ul{
+        display: flex;
+        li{
+            padding-left: 1rem;
+        }
+        list-style: none;
+        a{
+            text-decoration: none;
+        }
+    }
 }
