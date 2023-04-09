@@ -10,6 +10,7 @@
 
 nav {
   display: flex;
+  font-family: "Oswald", sans-serif;
 }
 nav p {
   color: #A59678;
