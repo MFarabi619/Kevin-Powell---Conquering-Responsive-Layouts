@@ -8,15 +8,23 @@
   box-sizing: border-box;
 }
 
+.container {
+  margin: 1rem;
+  max-width: 1200px;
+}
+
 nav {
   display: flex;
   font-family: "Oswald", sans-serif;
+  font-size: 18px;
+  background-color: #2E323F;
 }
 nav p {
-  color: #A59678;
+  padding: 1rem;
 }
 nav ul {
   display: flex;
+  text-transform: uppercase;
   list-style: none;
 }
 nav ul li {

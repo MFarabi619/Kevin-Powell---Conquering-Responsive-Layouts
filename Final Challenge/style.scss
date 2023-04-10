@@ -14,17 +14,26 @@ $brown: #A59678;
   }
 }
 
+.container{
+    // display: flex;
+    margin: 1rem;
+    max-width: 1200px;
+}
+
 nav {
     display: flex;
     font-family: 'Oswald', sans-serif;
+    font-size: 18px;
+    background-color: $dark-1;
     p{
-        color: $brown;
+        padding: 1rem;
     }
     // font-family: 'Oswald', sans-serif;
     // font-family: 'Montserrat', sans-serif;
 
     ul{
         display: flex;
+        text-transform: uppercase;
         li{
             padding-left: 1rem;
         }
