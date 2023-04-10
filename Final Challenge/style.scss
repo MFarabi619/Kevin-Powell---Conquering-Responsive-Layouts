@@ -26,7 +26,7 @@ nav {
     font-size: 18px;
     background-color: $dark-1;
     p{
-        padding: 1rem;
+        padding: 0 1rem;
     }
     // font-family: 'Oswald', sans-serif;
     // font-family: 'Montserrat', sans-serif;
@@ -35,12 +35,20 @@ nav {
         display: flex;
         text-transform: uppercase;
         li{
-            padding-left: 1rem;
         }
         list-style: none;
         a{
+            margin: 0 .25rem;
+            padding: 0 1rem;
+            // border: 1px solid red;
+            border-radius: 16px;
             text-decoration: none;
             color: $gray;
+            display: block;
+            &:hover{
+                color: white;
+                background-color: $brown;
+            }
         }
     }
 }
