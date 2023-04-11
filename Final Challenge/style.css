@@ -8,16 +8,16 @@
   box-sizing: border-box;
 }
 
-.container {
+.nav-container {
   margin: 1rem;
   max-width: 1200px;
+  background-color: #2e323f;
 }
 
 nav {
   display: flex;
   font-family: "Oswald", sans-serif;
   font-size: 18px;
-  background-color: #2E323F;
 }
 nav p {
   padding: 0 1rem;
@@ -32,10 +32,26 @@ nav ul a {
   padding: 0 1rem;
   border-radius: 16px;
   text-decoration: none;
-  color: #6F737F;
+  color: #6f737f;
   display: block;
 }
 nav ul a:hover {
   color: white;
-  background-color: #A59678;
+  background-color: #a59678;
+}
+nav .toggle-button {
+  position: absolute;
+  top: 2.3rem;
+  right: 3rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+}
+nav .toggle-button .bar {
+  height: 3px;
+  width: 100%;
+  background-color: white;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
