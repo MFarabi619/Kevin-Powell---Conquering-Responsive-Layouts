@@ -8,6 +8,16 @@
   box-sizing: border-box;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+img {
+  max-width: 100%;
+}
+
 .nav-container {
   margin: 1rem;
   max-width: 1200px;
@@ -19,8 +29,12 @@ nav {
   font-family: "Oswald", sans-serif;
   font-size: 18px;
 }
-nav p {
+nav .logo {
   padding: 0 1rem;
+}
+nav .nav-links {
+  display: flex;
+  height: 100%;
 }
 nav ul {
   display: flex;
@@ -39,19 +53,43 @@ nav ul a:hover {
   color: white;
   background-color: #a59678;
 }
-nav .toggle-button {
+
+.toggle-button {
+  display: none;
   position: absolute;
   top: 2.3rem;
   right: 3rem;
-  display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 30px;
   height: 21px;
 }
-nav .toggle-button .bar {
+.toggle-button .bar {
   height: 3px;
   width: 100%;
   background-color: white;
   border-radius: 10px;
+}
+
+@media (max-width: 700px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .toggle-button {
+    display: flex;
+  }
+  .nav-links {
+    display: none;
+    width: 100%;
+  }
+  .nav-links ul li {
+    text-align: center;
+  }
+  .nav-links ul li a {
+    padding: 0.5rem 1rem;
+  }
+  .nav-links.active {
+    display: flex;
+  }
 }/*# sourceMappingURL=style.css.map */
