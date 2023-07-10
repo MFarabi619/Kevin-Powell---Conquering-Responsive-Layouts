@@ -1,6 +1,7 @@
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('nav-links')[0]
+const navToggle = document.querySelector('.nav-toggle');
+const nav = document.querySelector('.nav');
 
-toggleButton.addEventListener('click', () => {
-  navbarLinks.classList.toggle('active')
+
+navToggle.addEventListener('click', () => {
+    nav.classList.toggle('nav--visible');
 })
